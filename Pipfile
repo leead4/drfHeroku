@@ -1,0 +1,27 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+django = "*"
+gunicorn = "*"
+django-heroku = "*"
+python-decouple = "*"
+djangorestframework = "*"
+dj-database-url = "*"
+"psycopg2" = "*"
+whitenoise = "*"
+markdown = "*"
+google-cloud-language = "*"
+google-api-python-client = "*"
+google-cloud-storage = "*"
+google-cloud = "*"
+"google-auth-httplib2" = "*"
+
+
+[requires]
+
+python_version = "3.6"
