@@ -5,8 +5,6 @@ from api import views
 from api.views import FileUploadView, CreateCardViewSet, GetCardsByDeckViewSet, CreateDeckViewSet, DeleteCardByIdViewSet, DeleteDeckByIdViewSet, EditCardViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'documents', views.DocumentViewSet)
 router.register(r'decks', views.DeckViewSet)
 router.register(r'cards', views.CardViewSet)
 
