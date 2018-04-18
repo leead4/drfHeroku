@@ -16,7 +16,7 @@ from rest_framework import authentication, permissions
 from rest_framework.response import Response
 from rest_framework import status
 
-from api.serializers import UserSerializer, DocumentSerializer, CardSerializer, DeckSerializer
+from api.serializers import CardSerializer, DeckSerializer
 from api.models import *
 import textwrap
 import googleapiclient.discovery
@@ -27,19 +27,6 @@ from google.cloud.language import enums
 from google.cloud.language import types
 
 
-class UserViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-class DocumentViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = Document.objects.all()
-    serializer_class = DocumentSerializer
 
 class CardViewSet(viewsets.ModelViewSet):
     queryset = Card.objects.all()
