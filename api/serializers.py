@@ -3,17 +3,6 @@ from api.models import *
 from rest_framework import serializers
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = User
-        fields = ('name')
-
-class DocumentSerializer(serializers.HyperlinkedModelSerializer):
-	class Meta:
-		model = Document
-		fields = ('description', 'document', 'uploaded_at')
-
-
 
 class DeckSerializer(serializers.HyperlinkedModelSerializer):
 	id = serializers.IntegerField(read_only = True)
