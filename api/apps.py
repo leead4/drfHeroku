@@ -1,5 +1,5 @@
-from django.apps import AppConfig
+# from django.apps import AppConfig
 
 
-class TranslatorConfig(AppConfig):
-    name = 'translator'
+# class TranslatorConfig(AppConfig):
+#     name = 'translator'

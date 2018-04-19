@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'api'
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -93,13 +93,13 @@ REST_FRAMEWORK = {
     )
 }
 
- DATABASES = {
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2'
-#         'NAME': os.environ.get('DB_NAME'),
+    'ENGINE': 'django.db.backends.postgresql_psycopg2'
+#             'NAME': os.environ.get('DB_NAME'),
 #         'USER': os.environ.get('DB_USER'),
 #         'PASSWORD': os.environ.get('DB_PASSWORD')
-            }
+    }
 }
 
 import dj_database_url
